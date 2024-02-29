@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kode+Mono:wght@400..700&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: "Anta", sans-serif;
+    background: #353535;
+    color: white;
+   
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    /* gap: 10px; */
+}
+
+header{
+    /* background-color: #BBC7CE; */
+    padding: 5px 40px;
+    align-items: center;
+    background-color: white;
+    color: black;
+   
+}
+
+header img {
+    background-color: aqua;
+    width: 50px;
+    height: 30px;
+    grid-column: 1/2;
+    justify-self: end;
+}  
+header h1 {
+    grid-column: 2/5;
+   
+}
+
+
+
+header  nav {
+    display: flex;
+
+    grid-column: 6 /13;
+    
+  text-align: center;
+    justify-self:right;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+header  nav a {
+    text-decoration: none;
+    margin-left: 30px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700px;
+}
+
+
+footer{
+   position: fixed;
+    padding: 20px 40px;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+   
+}
+
+
+footer  nav {
+    
+    grid-column: 6/9;
+    justify-content: center;
+   
+   
+}
+footer  nav a {
+    text-decoration: none;
+    /* margin-left: 30px; */
+    margin-right: 50px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700px;
+    transform: scale(1);
+    transition: 500ms ease;
+   
+}
+
+.imo {
+   
+    width: 35px;
+    height: 35px;
+}
+
+.imo:hover{
+    transform: scale(1.2);
+}
+
+
+main {
+    max-width: 1250px;
+    margin: 40px auto;
+    /* padding: 20px; */
+    gap: 0;
+    height: 73vh;
+}
+
+main img {
+    grid-column: 1/5;
+    width: 500px;
+    height: 20em;
+    object-fit: cover;
+    font-size: 1.2rem;
+    margin: auto 0;
+   
+   
+    
+}
+.welcom {
+    background-color: white;
+    grid-column: 5/13;
+    margin: auto 0;
+   
+    width: 750px;
+    height: 20em;
+    
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    
+}
+
+#username{
+    width: 50%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    min-width: 250px;
+}
+#password{
+    width: 50%;
+    padding:0.3em 0 ;
+    margin-bottom: 2em;
+    font-family: "Anta", sans-serif;
+    /* border-radius: .2em; */
+    min-width: 250px;
+}
+
+#submit{
+    width: 50%;
+    padding:0.4em 0 ;
+    margin-bottom: 1em;
+    background-color: #353535;
+    color: white;
+    font-family: "Anta", sans-serif;
+    cursor: pointer;
+    min-width: 250px;
+    
+}
+/* #submit:hover{
+
+} */
+
+@media   (max-width: 1400px){
+
+ 
+
+    main img {
+        width: 300px;
+        /* height: 500px; */
+        object-fit: cover;
+        grid-column: 3/5;
+        
+    }
+
+    .welcom {
+   
+        grid-column: 5/12;
+        width: 500px;
+       
+        
+       
+        min-width: 400px;
+       
+       
+       
+    }
+
+
+  
+  
+}
+
+
+@media   (max-width: 1330px){
+
+  
+    footer  nav {
+    
+        grid-column: 6/11;
+        
+       
+       
+    }
+
+ 
+  
+}
+
+
+@media   (max-width: 1000px){
+
+   
+
+   
+
+    footer  nav {
+    
+        grid-column: 5/12;
+        
+        
+       
+    }
+
+
+
+    header img {
+        display: none;
+    }  
+    header h1 {
+        grid-column: 2/12;
+        justify-self:center;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+
+
+    header  nav {
+    
+        justify-self:center;
+        grid-column: 1 /12;
+        
+    
+    }
+    header  nav a {
+        
+        margin-left: 40px;
+        
+    }
+    main {
+        height: 71.8vh;
+    }
+    
+  
+}
+
+@media   (max-width: 900px){
+
+   
+
+   
+    footer  nav {
+    
+        grid-column: 5/12;
+        
+        
+       
+    }
+ 
+  
+}
+
+
+@media   (max-width: 800px){
+
+    main img {
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        grid-column: 4/11;
+       
+    }
+
+    .welcom {
+   
+        grid-column: 4/11;
+        width: 400px;
+        height: 400px;
+        margin-bottom: 7em;
+     
+       
+       
+       
+       
+       
+    }
+
+
+  
+}
+
+
+@media   (max-width:750px){
+
+    footer{
+        box-sizing: border-box;
+    }
+  
+    footer  nav {
+    
+        grid-column:5/11;
+        
+        min-width: 300px;
+        box-sizing: border-box;
+       
+    }
+
+    footer  nav:last-child {
+    
+      margin-right: 0;
+       
+    }
+
+
+    main img {
+      
+        grid-column: 3/11;
+       
+    }
+
+    .welcom {
+   
+        grid-column: 3/11;
+     
+    }
+
+ 
+ 
+  
+}
